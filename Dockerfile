@@ -53,7 +53,7 @@ RUN mkdir -p "/app/.config/chromium/Crash Reports/pending"
 COPY src .
 COPY package.json ../
 
-EXPOSE 8191
+EXPOSE 80
 
 # dumb-init avoids zombie chromium processes
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
